@@ -16,7 +16,7 @@ environment {
         
     stage('SonarQube analysis') {
     environment {
-        scannerHome = tool 'hakeem-sonar-scanner';
+        scannerHome = tool 'hakeem-sonar-scanner'
     }
     steps{    
     withSonarQubeEnv('hakeem-sonarqube-server') { // If you have configured more than one global server connection, you can specify its name
